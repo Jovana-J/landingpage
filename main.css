@@ -1,0 +1,498 @@
+/* color: 
+red - rgb(73, 17, 6)
+dark gold - rgb(158, 112, 51)
+light gold - rgb(253, 221, 149)
+*/
+body{
+    width: 100vw;
+    margin: 0;
+      color: rgb(66, 66, 66);
+      overflow-x: hidden;
+     background-color:  rgb(253, 221, 149);
+     cursor: default;
+}
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 8vw;
+    height: 100vh;
+    font-size: 11pt;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: linear-gradient(
+        to bottom right,
+        rgb(37, 37, 37),
+        rgb(19, 19, 19)
+      ); */
+     
+      border-right: 1px solid rgb(17, 17, 17);
+      background-color: rgb(253, 221, 149);
+      background-color: white;
+
+}
+.img{
+    height: 12em;
+    width: 100%;
+    background-image: url("img/logo.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     /* background-attachment: fixed; */
+     background-size: 50%;
+}
+a {
+    /* height: 4em; */
+    text-align: right;
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(17, 17, 17);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.103);
+    transition-duration: 400ms;
+    font-family: 'Old Standard TT';
+font-style: oblique;
+
+}
+a:hover {
+    /* color: rgb(158, 112, 51); */
+    color: rgb(99, 99, 99);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(73, 17, 6);
+}
+.header {
+    margin-left: 8vw;
+    width: 92vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+/* .header {
+    background-image: url("img/IMG_8697.jpg");
+     background-repeat: no-repeat;
+     background-position: right top;
+     background-attachment: fixed;
+     background-size: cover;
+     
+} */
+header {
+    font-size: 40pt;
+    font-weight: 100;
+    font-family: 'Old Standard TT';
+    font-family: 'Raleway';
+    color: rgb(17, 17, 17);
+}
+.paragraph {
+    height: 100%;
+    font-family: 'Old Standard TT';
+    font-size: 18pt;
+    font-style: normal;
+    color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1em;
+
+}
+.UpcomingEvents, .PrivateTrainings,.Shop, .AboutFelyEguia, .AboutRoyalStrokesAcademy, .Testimonials, .Contact{
+    margin-left: 8vw;
+    width: 92vw;
+    height: 100vh;
+    background-color:  rgb(253, 221, 149);
+    background-color:  black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    /* background-image: linear-gradient(
+        to bottom right,
+        rgb(3, 3, 3),
+        black
+      ); */
+      /* border-bottom: 1px solid rgba(255, 255, 255, 0.11); */
+}
+.AboutRoyalStrokesAcademy, .header{
+    background-image: url("img/Royal Strokes Academy/IMG_8691.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+        background-color:  rgb(255, 233, 182);
+}
+.AboutRoyalStrokesAcademy{
+    background-position-y: 40%;
+}
+.AboutFelyEguia{
+    background-color:  rgb(253, 221, 149);
+    background-image: url("img/Fely Eguia/IMG_7363.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color:  rgb(255, 233, 182);
+}
+.Contact{
+    background-color:  rgb(253, 221, 149);
+    background-image: url("img/Fely Eguia/IMG_D57473BFC892-1.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color:  rgb(255, 233, 182); 
+    /* background-color:  white */
+
+}
+.UpcomingEventsHeading, .PrivateTrainingsHeading,.ShopHeading, .AboutFelyEguiaHeading, .AboutRoyalStrokesAcademyHeading, .TestimonialsHeading, .ContactHeading{
+    grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 3;
+     
+display: flex;
+justify-content: flex-end;
+padding-right: 2%;
+align-items: center;
+font-family: 'Raleway';
+font-size: 16pt;
+/* border: 1px solid rgb(17, 17, 17); */
+color: rgb(17, 17, 17);
+color:rgb(73, 17, 6);
+color: rgba(255, 255, 255, 0.11);
+color:white;
+
+}
+.UpcomingEventsHeading,.PrivateTrainingsHeading, .ShopHeading{
+    font-weight: 100;
+}
+.AboutFelyEguiaHeading, .AboutRoyalStrokesAcademyHeading, .TestimonialsHeading, .ContactHeading{
+    color: black;
+    font-family: 'Old Standard TT';
+    /* border-bottom: 1px solid rgba(17, 17, 17, 0.103); */
+    /* font-style: oblique; */
+    font-family: 'Raleway';
+    font-size: 24pt;
+    font-weight: 100;
+}
+.TestimonialsHeading{
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+}
+.Events, .Trainings, .Products, .AboutFelyEguiaMain, .AboutRoyalStrokesAcademyHeadingMain, .TestimonialsMain, .ContactMain{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 11;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.TestimonialsMain{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 11;
+}
+.Testimonial{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(253, 221, 149);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgb(255, 233, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.individual{
+    font-size: 24pt;
+    font-family: 'Raleway';
+    font-weight: 200;
+    margin-top: 1em;
+}
+.student{
+    /* font-family: 'Old Standard TT'; */
+/* font-style: italic; */
+font-family: 'Rubik Mono One';
+color: black;
+/* height: 3em; */
+/* margin-top: 1.5em; */
+font-weight: 400;
+font-size: 16pt;
+font-variant-caps: all-petite-caps;
+
+}
+.said{
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Old Standard TT';
+    font-family: 'Raleway';
+    font-size: 11pt;
+    color: black;
+    line-height: 1.5em;
+    letter-spacing: 0.3pt;
+    margin-top: 100%;}
+#firstTestimonial{
+    background-image: url("img/Testimonials/Cynthia Jones.jpg");
+    background-size: 57%;
+    background-position: -15%;
+}
+#secondTestimonial{
+    background-image: url("img/Testimonials/Vanessa Thomas.jpg");
+    background-position: 78%;
+    background-size: 57%;
+}
+#thirdTestimonial{
+    background-image: url("img/Testimonials/Natalie Hammoud.jpg");
+    background-position: 139%;
+    background-size: 57%;
+}
+#btnTestimonials{
+    margin: 0 ;
+}
+.Event, .Train, .Product, .AboutFelyEguiaText, .AboutRoyalStrokesAcademyText{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#TrainCaption, #AboutFEText, #AboutRSAText {
+    width: 50%;
+    /* justify-content: center; */
+}
+#AboutFEText, #AboutRSAText {
+    width: 50%;
+}
+#AboutRSAText {
+    justify-content: flex-start;
+}
+.imgAbout, .imgAboutRSA{
+    height: 10em;
+width: 10em;
+    background-image: url("img/Fely Eguia/IMG_8002.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    border-radius: 50%;
+margin-top: -5%;
+margin-bottom: 5%;
+/* box-shadow: 0px 0px 8px 5px rgba(187, 187, 187, 0.2); */
+
+}
+.cover{
+    height: 50%;
+width: 100%;
+    background-image: url("img/Upcoming events/Brow\ and\ Lash\ Affair\ -\ New\ York.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: 80%;
+}
+/* .cover:hover{
+    background-size: contain;
+transition-timing-function: ease-in-out;
+    opacity: 100%;
+    transition-duration: 600ms;
+    cursor: pointer;
+} */
+#firstProductCover{
+    background-image: url("img/Products/Measuring\ Ruler\ -\ $50\ .jpg");
+}
+#secondProductCover{
+    background-image: url("img/Products/Wireless\ Tattoo\ Machine\ -\ $320\ .jpg");
+}
+#thirdProductCover{
+    background-image: url("img/Products/Mapping\ String\ -\ $75.jpg");
+}
+#fourthProductCover{
+    background-image: url("img/Products/Needle\ Catridges\ -\ $120.jpg");
+}
+.name, .date, .location, .btn{
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    font-size: 16pt;
+    font-family: 'Raleway';
+/* font-family: 'Old Standard TT'; */
+/* font-family: 'Rubik Mono One'; */
+color: white;
+
+letter-spacing: 0.3pt;
+/* background-image: linear-gradient(
+        to bottom right,
+        rgb(3, 3, 3),
+        black
+      ); */
+      font-weight: 100;
+}
+.name {
+    background-image: none;
+}
+span{
+    margin-left: 10%;
+}
+
+.eventInfo{
+    margin-right: 10%;
+
+}
+.date, .location{
+    font-size: 11pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(43, 43, 43);
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+    font-family: 'Raleway';
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11pt;
+    font-weight: 500;
+    letter-spacing: 0.2pt;
+
+    font-weight: 400;
+    font-family: 'Old Standard TT';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11pt;
+    letter-spacing: 0.3pt;
+}
+#secondEventCover{
+        background-image: url("img/Upcoming events/Brow\ Mapping\ Boot\ Camp\ -\ Detroit.jpg");
+}
+#thirdEventCover{
+    background-image: url("img/Upcoming events/ComboBrows\ Master\ Training\ -\ Detroit.jpg");
+}
+#fourthEventCover{
+    background-image: url("img/Upcoming events/Combobrows\ Master\ Training\ -\ Miami.jpg");
+}
+#firstTrainCover{
+    background-image: url("img/Private one on one trainings/b73e668b-62fc-4679-8590-374de3a4449c.JPG");
+}
+#secondTrainCover{
+    background-image: url("img/Private one on one trainings/d7b29292-f90a-4b97-8989-55881c8fc305.JPG");
+}
+#TrainCaptionText, #Text{
+    font-size: 16pt;
+    line-height: 1.5em;
+    font-family: 'Raleway';
+    color: rgb(117, 117, 117);
+    color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    height: 50%;
+    width: 96%;
+    align-items: flex-start;
+    /* text-indent: 2em; */
+}
+#TrainCaptionText{
+    font-size: 12pt;
+    font-weight: 500;
+    letter-spacing: 0.5pt;
+}
+#Text{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-family: 'Old Standard TT';
+    width: 96%;
+    height: initial;
+    /* font-variant-caps: all-petite-caps; */
+}
+
+.btnAbout, .btnAboutRSA, input, textarea{
+    /* width: 100%;
+    width: 36%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+font-family: 'Rubik Mono One';
+color: white;
+height: 3em;
+margin-top: 1.5em;
+
+padding-left: 2em;
+padding-right: 2em;
+font-weight: 400;
+font-size: 16pt;
+/* border-radius: 1.5em; */
+border: 1px solid rgba(17, 17, 17, 0.103);
+/* box-shadow: 0px 0px 8px 5px rgba(187, 187, 187, 0.137); */
+font-variant-caps: all-petite-caps;
+}
+.btnAbout:hover, .btnAboutRSA:hover{
+    /* border: 1px solid rgb(17, 17, 17); */
+color: black;
+transition-duration: 400ms;
+cursor: pointer;
+background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0),
+        rgba(253, 222, 149)
+      );
+}
+/* #AboutFEText{
+    justify-content: center;
+} */
+input, textarea{
+    width: 100%;
+    font-size: 16pt;
+    width: 84%;
+    color: black;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant-caps: normal;
+    font-weight: 100;
+}
+.fullname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+width: 96%;
+}
+.fullname input {
+    width: 35%;
+}
+.ContactText {
+    width: 46%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: space-between;
+    align-items: space-between;
+    font-weight: 400;
+    font-family: 'Old Standard TT';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 9pt;
+    color: black;
+    line-height: 1.5em;
+    letter-spacing: 0.3pt;
+
+}
+.footer{
+    margin-bottom: 2%;
+}
